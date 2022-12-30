@@ -3,7 +3,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx/tasks-runners/default",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MzgzYjUyNTgtYzhmMy00MWI3LThiZDItYWE1YzZhOTMyZjJkfHJlYWQtd3JpdGU="
@@ -13,6 +13,9 @@
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"]
-    }
+    },
+    "outputs": [
+      "{projectRoot}/lib"
+    ]
   }
 }

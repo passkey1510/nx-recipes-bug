@@ -1,10 +1,10 @@
 {
   "name": "is-odd",
   "version": "0.0.0",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "devDependencies": {},
   "scripts": {
-    "build": "tsc index.ts --outDir dist"
+    "build": "tsc index.ts --outDir lib"
   },
   "dependencies": {
     "is-even": "*"
